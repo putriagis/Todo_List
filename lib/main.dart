@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 
-// ================= 1. TITIK AWAL =================
 void main() {
   runApp(const MyApp());
 }
 
-// ================= 2. APLIKASI =================
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -18,7 +16,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// ================= 3. MODEL DATA =================
 class Tugas {
   String isi;
   bool selesai;
@@ -26,7 +23,6 @@ class Tugas {
   Tugas({required this.isi, required this.selesai});
 }
 
-// ================= 4. HALAMAN UTAMA =================
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
 
@@ -70,7 +66,6 @@ class _MainPageState extends State<MainPage> {
     super.dispose();
   }
 
-  // ----- tampilan -----
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -130,7 +125,6 @@ class _MainPageState extends State<MainPage> {
   }
 }
 
-// ================= 5. KOMPONEN KARTU TUGAS =================
 class TaskCard extends StatelessWidget {
   final String isi;
   final bool selesai;
