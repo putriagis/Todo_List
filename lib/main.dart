@@ -31,11 +31,9 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  // ----- data -----
   List<Tugas> daftarTugas = [];
   TextEditingController inputController = TextEditingController();
 
-  // ----- fungsi -----
   void tambahTugas() {
     String teks = inputController.text.trim();
     if (teks == '') {
